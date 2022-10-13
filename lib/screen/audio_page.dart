@@ -35,6 +35,7 @@ class _audioState extends State<audio> {
   void initState() {
     // TODO: implement initState
     super.initState();
+
     assetsAudioPlayer.stop();
     new_song(play: true);
   }

@@ -42,7 +42,11 @@ class _homeState extends State<home> {
                   onTap: () {
                     setState(() {
                       global.init_value = i;
-
+                      new_song(play: true);
+                      global.totalsecond = assetsAudioPlayer
+                          .current.value!.audio.duration
+                          .toString()
+                          .split(".")[0];
                       Navigator.of(context).pushNamed('audio');
                     });
                   },
